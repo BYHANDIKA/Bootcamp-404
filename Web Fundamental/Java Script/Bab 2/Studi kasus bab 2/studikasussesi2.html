@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus sesi 2</title>
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <!-- Membuat MODAL -->
+    <div align="center">
+        <p>Silahkan melakukan Pendaftaran hela atuh</p>
+        <button onclick="tampilModal()" style="width: auto;">Daftar</button>
+    </div>
+    
+    <div id="idModal" class="modal">
+    
+        <form class="modal-content" method="post">
+    
+            <div class="container">
+                <span onclick="tutupModal()" class="close" title="Close Modal">&times;</span>
+                <label for="name"><b>Nama :</b></label><br>
+                <input type="text" name="nama" id="nama"/><br>
+    
+                <label for="nohp"><b>No. HP :</b></label><br>
+                <input type="text" name="nomerhp" id="nomerhp"/><br>
+    
+                <input type="button" value="Daftar" id="submit" onclick="validate()"/>
+            </div>
+    
+            <div class="container" style="background-color: grey;">
+                <br><b>Nama : Handika <br> No HP yang benar : 08122107</b>
+            </div>
+    
+        </form>
+    </div>
+    <!-- Link eksternal JS -->
+    <script src="modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Java Script</title>
+</head>
+<!-- Function onload ditampilkan ketika halaman sudah selesai diproses -->
+<body onload="OnLoad()">
+    <!-- Function onkeypress ditampilkan ketika ada tombol yang ditekan pada input field -->
+    <input type="text" onkeypress="OnKeypress()" placeholder="Silahkan ketik password Anda"><br><br>
+    <!-- Function onclick ditampilkan ketika elemen yang terkait di klik  -->
+    <button onclick="OnClick()">Klik Tombol ini ya guys</button><br><br>
+    <!-- Function onsubmit ditampilkan ketika form disubmit -->
+    <form name="form_daftar" onsubmit="OnSubmit()" method="post">
+        Nama: <input type="text" name="nama">
+        <br>
+        Email: <input type="text" name="email">
+        <br><br>
+        <button type="submit" id="tombol">Kirim</button>
+    </form>
+    <!-- Function onchange ditampilkan ketika nilai pada radio button berubah -->
+    <p>Jenis Kelamin</p>
+    <form action="#">
+        <input type="radio" onchange="OnChange(this.value)" value="Perempuan">Perempuan<br>
+        <input type="radio" onchange="OnChange(this.value)" value="Laki-laki">Laki-laki<br>
+    </form><br>
+    <!-- Script JS -->
+    <script src="alert.js"></script>
+    <script src="confirm.js"></script>
+    <script src="prompt.js"></script>
+    <script src="HelloWorld.js"></script>
+</body>
+</html>

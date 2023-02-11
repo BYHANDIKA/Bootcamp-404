@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi Modal dan Login</title>
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <!-- Membuat readMore -->
+    <h1>Java Script Fundamental</h1>
+    <p id="artikel"> Java Script akan Membuat
+        <a id="link" href="#" onclick="ShowMore()">...readMore</a>
+    </p>
+    <br><br>
+    <h1>Registrasi</h1>
+    <button id="tombol1" onclick="Klik()">Info Pengisian</button>
+    <!-- Membuat Validasi Masukan -->
+    <p id="info"></p>
+    <form name="form_daftar" onsubmit="Validate()" method="post">
+        Nama : <input type="text" name="nama">
+        <br><br>
+        Email : <input type="text" name="email">
+        <br><br>
+        Alamat : <input type="text" name="alamat">
+        <br><br>
+        No.HP : <input type="text" name="nomorHP">
+        <br><br>
+        <button type="submit" id="tombol2">Register</button>
+    </form>
+
+    <p id="hasil"></p>
+    <!-- Membuat MODAL -->
+    <div align="center">
+        <p>Silahkan melakukan login terlebih dahulu</p>
+    <button onclick="tampilModal()" style="width: auto;">Login</button>
+    </div>
+
+    <div id="idModal" class="modal">
+
+        <form class="modal-content" method="post">
+
+            <div class="container">
+                <span onclick="tutupModal()" class="close" title="Close Modal">&times;</span>
+                <label for="uname"><b>Username :</b></label><br>
+                <input type="text" name="username" id="username"/><br>
+
+                <label for="psw"><b>Password :</b></label><br>
+                <input type="password" name="password" id="password"/><br>
+
+                <input type="button" value="login" id="submit" onclick="validate()"/>
+            </div>
+
+            <div class="container" style="background-color: grey;">
+                <br><b>Username : user <br> Password : 123</b>
+            </div>
+
+        </form>
+    </div>
+    <!-- Link eksternal JS -->
+    <script src="DOM.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Diri</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <label for="">Nama Lengkap :</label>
+    <input type="text" name="nama"><br><br>
+
+    <label for="">Tanggal Lahir :</label>
+    <input type="date" name="tgllhr"><br><br>
+
+    <label for="">Jenis Kelamin :</label>
+    <input type="radio" name="jeniskel" value="Laki-laki">
+        <label for="jeniskel">Laki-laki</label>
+    <input type="radio" name="jeniskel" value="Perempuan">
+        <label for="jeniskel">Perempuan</label><br><br>
+
+    <label for="">Hobi :</label><br><br>
+    <input type="checkbox" name="hobi">
+        <label >Suka Membaca</label><br><br>
+    <input type="checkbox" name="hobi">
+        <label >Suka Olahraga</label><br><br>
+    <input type="checkbox" name="hobi">
+        <label >Suka Travelling</label><br><br>
+
+    <label >Negara :</label>
+    <select name="asalnegara" size="1">
+        <option value="id">Indonesia</option>
+        <option value="sg">Singapura</option>
+        <option value="my">Malaysia</option>
+        <option value="th">Thailand</option>
+    </select><br><br>
+    <label >Mobil Disewa :</label>
+    <select name="mobilsewa" size="1">
+        <option value="mr">Mercedes Benz</option>
+        <option value="av">Avanza</option>
+        <option value="pj">Pajero</option>
+        <option value="bj">Bajai</option>
+    </select>
+
+    <label >Tahun Diproduksi :</label>
+    <select name="tahun" size="1">
+        <option value="">2017</option>
+        <option value="">2018</option>
+        <option value="">2019</option>
+        <option value="">2020</option>
+        <option value="">2021</option>
+        <option value="">2022</option>
+    </select><br><br>
+    
+    <label for="">Alamat Lengkap :</label>
+        <textarea name="alamatlkp" id="" cols="50" rows="5"></textarea><br><br>
+
+    <label for="">Arsip/File CV Terbaru :</label>
+    <input type="file" name="cv"><br><br>
+
+    <label for="">Waktu Pengambilan :</label>
+    <input type="time" name="pengambilan"><br><br>
+    
+    <label for="">Waktu Pengembalian :</label>
+    <input type="time" name="pengembalian"><br><br>
+
+    <label for="">Password :</label>
+    <input type="password" name="katakunci"><br><br>
+
+    <label for="">
+        <input type="submit" value="Kirim atuh">
+    </label>
+</body>
+</html>

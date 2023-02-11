@@ -1,0 +1,33 @@
+li a {
+    color: #77ab59;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 25px 30px 25px 100px;
+}
+
+li {
+    float: left;
+}
+
+ul {
+    color: white;
+    list-style-type: none;
+}
+
+.navbar {
+    background-color: black;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    font-family: castellar;
+    color: rgb(82, 255, 2);
+    letter-spacing: 1px;
+    text-shadow: 5px 1px 12px ;
+    padding: 10px 30px 25px 100px;
+}
